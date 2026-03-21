@@ -23,32 +23,40 @@ function Contact() {
 
         {/* Buttons */}
         <div
-          style={{
-            marginTop: "15px",
-            display: "flex",
-            justifyContent: "center",
-            gap: "10px",
-            flexWrap: "wrap",
-          }}
-        >
-          <a href={WHATSAPP_LINK} className="btn">
-            💬 WhatsApp
-          </a>
+  style={{
+    marginTop: "15px",
+    display: "flex",
+    justifyContent: "center",
+    gap: "10px",
+    flexWrap: "wrap",
+  }}
+>
+  <a href={WHATSAPP_LINK} className="btn">
+    💬 WhatsApp
+  </a>
 
-          <a href="tel:+919766513058" className="btn">
-            📞 Call
-          </a>
+  <a href="tel:+919766513058" className="btn">
+    📞 Call
+  </a>
 
-          {/* Map Link */}
-          <a
-            href="https://maps.app.goo.gl/ve2i6tnq4MaoRs6v9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn"
-          >
-            📍 View Location
-          </a>
-        </div>
+  <a
+    href="https://maps.app.goo.gl/ve2i6tnq4MaoRs6v9"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn"
+  >
+    📍 Location
+  </a>
+
+  <a
+    href="https://www.instagram.com/guru_global_school_manchar?igsh=Y2x5cmZrMXJ0amhu"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn"
+  >
+    📸 Instagram
+  </a>
+</div>
 
         {/* Divider */}
         <div
