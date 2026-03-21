@@ -1,12 +1,12 @@
 function Features() {
   const features = [
-    "Activity Based Learning",
-    "Phonics & Foundation Skills",
-    "Safe & Caring Environment",
-    "Individual Attention",
-    "Art, Music & Dance",
-    "Cultural Celebrations",
-    "CCTV Supervision"
+    { text: "Activity Based Learning", icon: "🎨", color: "#FFD93D" },
+    { text: "Phonics & Foundation Skills", icon: "📚", color: "#4D96FF" },
+    { text: "Safe & Caring Environment", icon: "🛡️", color: "#6BCB77" },
+    { text: "Individual Attention", icon: "👩‍🏫", color: "#FF6B6B" },
+    { text: "Art, Music & Dance", icon: "🎵", color: "#f093fb" },
+    { text: "Cultural Celebrations", icon: "🎉", color: "#FF9F1C" },
+    { text: "CCTV Supervision", icon: "📹", color: "#00C9A7" }
   ];
 
   return (
@@ -16,11 +16,43 @@ function Features() {
 
         <div className="grid grid-3">
           {features.map((f, i) => (
-            <div key={i} className="card" style={{
-              background: "linear-gradient(135deg, #f093fb, #f5576c)",
-              color: "white"
-            }}>
-              {f}
+            <div
+              key={i}
+              className="card"
+              style={{
+                background: "linear-gradient(135deg, #f093fb, #f5576c)",
+                color: "white",
+                textAlign: "center",
+
+                // Center last item
+                gridColumn:
+                  features.length % 3 === 1 && i === features.length - 1
+                    ? "2 / 3"
+                    : "auto",
+              }}
+            >
+              {/* Colored Icon Circle */}
+              <div
+                className="icon"
+                style={{
+                  background: f.color,
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 12px",
+                  fontSize: "26px",
+                }}
+              >
+                {f.icon}
+              </div>
+
+              {/* Text */}
+              <div style={{ fontWeight: "500" }}>
+                {f.text}
+              </div>
             </div>
           ))}
         </div>
