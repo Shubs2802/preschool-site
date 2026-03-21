@@ -4,6 +4,7 @@ import Programs from "./components/Programs";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import { WHATSAPP_LINK } from "./config";
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
 
       {/* Floating WhatsApp */}
       <a
-        href="https://wa.me/919766513058"
-        target="_blank"
+        href={WHATSAPP_LINK} target="_blank"
         style={{
           position: "fixed",
           bottom: "20px",

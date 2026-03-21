@@ -1,3 +1,5 @@
+import { WHATSAPP_LINK } from "../config";
+
 function Contact() {
   return (
     <section style={{
@@ -10,7 +12,7 @@ function Contact() {
         <p>📞 +91 9766513058, +91 8149613058, +91 9307164172</p>
         <p>📍 Near Sai Temple,Mordewadi Road,Manchar - 410503</p>
 
-        <a href="https://wa.me/919766513058" className="btn">
+        <a href={WHATSAPP_LINK} className="btn">
           Chat on WhatsApp
         </a>
       </div>

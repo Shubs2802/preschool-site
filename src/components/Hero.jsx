@@ -1,3 +1,5 @@
+import { WHATSAPP_LINK } from "../config"; 
+
 function Hero() {
   return (
     <section style={{
@@ -9,7 +11,7 @@ function Hero() {
         <p style={{ fontSize: "18px" }}>We Care, We Create</p>
         <p><b>Admissions Open 2026–27</b></p>
 
-        <a href="https://wa.me/919766513058" className="btn">
+        <a href={WHATSAPP_LINK} className="btn">
           Enroll via WhatsApp
         </a>
       </div>
