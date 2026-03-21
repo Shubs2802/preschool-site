@@ -9,7 +9,7 @@ function Hero() {
         <p style={{ fontSize: "18px" }}>We Care, We Create</p>
         <p><b>Admissions Open 2026–27</b></p>
 
-        <a href="https://wa.me/919876543210" className="btn">
+        <a href="https://wa.me/919766513058" className="btn">
           Enroll via WhatsApp
         </a>
       </div>
