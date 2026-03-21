@@ -18,20 +18,18 @@ function Features() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="card"
+              className={`card ${
+                features.length % 3 === 1 && i === features.length - 1
+                  ? "center-last"
+                  : ""
+              }`}
               style={{
                 background: "linear-gradient(135deg, #f093fb, #f5576c)",
                 color: "white",
                 textAlign: "center",
-
-                // Center last item
-                gridColumn:
-                  features.length % 3 === 1 && i === features.length - 1
-                    ? "2 / 3"
-                    : "auto",
               }}
             >
-              {/* Colored Icon Circle */}
+              {/* Icon */}
               <div
                 className="icon"
                 style={{
