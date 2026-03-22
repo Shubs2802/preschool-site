@@ -28,7 +28,7 @@ function Programs() {
 
 
   return (
-    <section>
+    <section id ="programs">
       <div className="container">
         <h2>Our Programs</h2>
 

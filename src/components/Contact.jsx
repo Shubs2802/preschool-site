@@ -3,6 +3,7 @@ import { WHATSAPP_LINK } from "../config";
 function Contact() {
   return (
     <section
+    id="contact"
       style={{
         background: "linear-gradient(135deg, #667eea, #764ba2)",
         color: "white",

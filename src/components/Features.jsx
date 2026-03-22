@@ -10,7 +10,7 @@ function Features() {
   ];
 
   return (
-    <section style={{ background: "#f9f9f9" }}>
+    <section id ="features" style={{ background: "#f9f9f9" }}>
       <div className="container">
         <h2>Why Choose Us</h2>
 

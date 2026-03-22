@@ -63,7 +63,7 @@ function Gallery() {
   };
 
   return (
-    <section>
+    <section id="gallery">
       <div className="container">
         <h2>Gallery 📸</h2>
 
