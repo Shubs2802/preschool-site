@@ -1,9 +1,10 @@
 import { WHATSAPP_LINK } from "../config";
+import { FaWhatsapp, FaInstagram, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
   return (
     <section
-    id="contact"
+      id="contact"
       style={{
         background: "linear-gradient(135deg, #667eea, #764ba2)",
         color: "white",
@@ -22,42 +23,34 @@ function Contact() {
           📍 Near Sai Temple, Mordewadi Road, Manchar - 410503
         </p>
 
-        {/* Buttons */}
-        <div
-  style={{
-    marginTop: "15px",
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    flexWrap: "wrap",
-  }}
->
-  <a href={WHATSAPP_LINK} className="btn">
-    💬 WhatsApp
-  </a>
+        {/* Icon Buttons */}
+        <div className="icon-row">
+          <a href={WHATSAPP_LINK} className="icon-btn whatsapp">
+            <FaWhatsapp />
+          </a>
 
-  <a href="tel:+919766513058" className="btn">
-    📞 Call
-  </a>
+          <a href="tel:+919766513058" className="icon-btn call">
+            <FaPhone />
+          </a>
 
-  <a
-    href="https://maps.app.goo.gl/ve2i6tnq4MaoRs6v9"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn"
-  >
-    📍 Location
-  </a>
+          <a
+            href="https://maps.app.goo.gl/ve2i6tnq4MaoRs6v9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-btn location"
+          >
+            <FaMapMarkerAlt />
+          </a>
 
-  <a
-    href="https://www.instagram.com/guru_global_school_manchar?igsh=Y2x5cmZrMXJ0amhu"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn"
-  >
-    📸 Instagram
-  </a>
-</div>
+          <a
+            href="https://www.instagram.com/guru_global_school_manchar?igsh=Y2x5cmZrMXJ0amhu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-btn insta"
+          >
+            <FaInstagram />
+          </a>
+        </div>
 
         {/* Divider */}
         <div

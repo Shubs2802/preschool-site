@@ -1,4 +1,5 @@
 import { WHATSAPP_LINK } from "../config";
+import { FaWhatsapp, FaInstagram, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 function Hero() {
   return (
