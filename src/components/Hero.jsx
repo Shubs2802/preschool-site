@@ -8,9 +8,18 @@ function Hero() {
         color: "white",
         padding: "80px 20px",
         textAlign: "center",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      <div className="container">
+      {/* 🔥 Floating Shapes */}
+      <div className="floating-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className="container" style={{ position: "relative", zIndex: 2 }}>
         <h1 style={{ marginBottom: "10px" }}>
           Guru Global School 🌟
         </h1>
@@ -23,7 +32,7 @@ function Hero() {
           Admissions Open 2026–27
         </p>
 
-        {/* Wrapper for badge + button */}
+        {/* Wrapper */}
         <div
           style={{
             display: "flex",
@@ -48,7 +57,7 @@ function Hero() {
             🏅 ISO 9001:2015 Certified
           </div>
 
-          {/* WhatsApp Button */}
+          {/* Button */}
           <a
             href={WHATSAPP_LINK}
             className="btn"

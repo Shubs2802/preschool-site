@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #fdfdfd;
+  background: #fffdf8; /* soft warm background */
 }
 
 /* Sections */
@@ -13,11 +13,13 @@ section {
 .container {
   max-width: 1100px;
   margin: auto;
+  position: relative;
 }
 
 /* Headings */
 h1 {
   font-size: 2.5rem;
+  letter-spacing: 0.5px;
 }
 
 h2 {
@@ -25,21 +27,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Buttons */
+/* 🌈 BUTTONS (Playful style) */
 .btn {
-  background: linear-gradient(135deg, #ff6b6b, #ff9f43);
-  color: white;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
   padding: 12px 24px;
-  border-radius: 30px;
+  border-radius: 40px;
   text-decoration: none;
   display: inline-block;
   margin-top: 15px;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.08) rotate(-1deg);
 }
 
 /* Grid */
@@ -48,7 +50,7 @@ h2 {
   gap: 20px;
 }
 
-/* Mobile first (default = 1 column) */
+/* Mobile first */
 .grid-3,
 .grid-4 {
   grid-template-columns: 1fr;
@@ -76,13 +78,17 @@ h2 {
   }
 }
 
-/* Cards */
+/* 🧸 CARDS (Soft + playful) */
 .card {
   padding: 20px;
-  border-radius: 20px;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
 /* Icon animation */
@@ -93,47 +99,82 @@ h2 {
 }
 
 .card:hover .icon {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.25) rotate(8deg);
 }
 
+/* Center last card */
 @media (min-width: 768px) {
   .center-last {
     grid-column: 2 / 3;
   }
 }
+
+/* 🖼️ Images */
 img {
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
 
 img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
 }
-/* Slider container */
+
+/* 🎞️ Slider */
 .slider-container {
   overflow: hidden;
   width: 100%;
 }
 
-/* Slider track */
 .slider {
   display: flex;
   transition: transform 0.5s ease;
 }
 
-/* Each image */
 .slide-img {
   width: calc(100% / 3);
   height: 220px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 20px;
   margin-right: 10px;
   flex-shrink: 0;
 }
 
-/* Mobile */
+/* Mobile slider */
 @media (max-width: 768px) {
   .slide-img {
     width: 100%;
   }
+}
+
+/* 🎈 Floating shapes (more playful) */
+.floating-shapes span {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  animation: float 8s infinite ease-in-out;
+}
+
+/* Positions */
+.floating-shapes span:nth-child(1) {
+  top: 15%;
+  left: 10%;
+}
+
+.floating-shapes span:nth-child(2) {
+  top: 60%;
+  left: 80%;
+}
+
+.floating-shapes span:nth-child(3) {
+  top: 75%;
+  left: 25%;
+}
+
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px) scale(1.05); }
+  100% { transform: translateY(0); }
 }
